@@ -4,13 +4,10 @@ import {
   StyleSheet,
   Text,
   View,
-  Dimensions,
 } from "react-native";
 import React from "react";
 import SongList from "../comps/SongList";
 import { Images } from "../assets/Themes";
-
-const { width: windowWidth } = Dimensions.get("window");
 
 const TracksScreen = ({ navigation, tracks }) => {
   return (
