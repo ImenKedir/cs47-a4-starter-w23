@@ -9,6 +9,7 @@ import {
 import React from "react";
 import { FlatList } from "react-native";
 import { Themes } from "../assets/Themes";
+import { Ionicons } from '@expo/vector-icons';
 
 const { width: windowWidth } = Dimensions.get("window");
 
@@ -60,7 +61,7 @@ const SongItem = ({
           navigation.navigate("Preview", { url: preview });
         }}
       >
-        <Text style={styles.songIndex}>{index}</Text>
+        <Ionicons name="play-circle" size={32} color={Themes.colors.spotify} />
       </Pressable>
       <Image style={styles.albumImage} source={{ uri: imageUrl }} />
       <View style={styles.songNameContainer}>
